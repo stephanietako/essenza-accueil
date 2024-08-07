@@ -21,7 +21,61 @@ main {
 }
 
 img {
-  height: 65rem;
+  height: 55rem;
   width: 65rem;
   object-fit: cover;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  img {
+    height: 45rem;
+    width: 50rem;
+  }
+}
+
+@media (max-width: 768px) {
+  img {
+    height: 30rem;
+    width: 40rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 10px 0;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  img {
+    height: 20rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    height: 25rem;
+    width: 90%;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  img {
+    height: 12rem;
+    width: 95%;
+  }
+
+  header {
+    font-size: 1rem;
+  }
 }
